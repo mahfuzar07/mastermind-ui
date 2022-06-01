@@ -16,7 +16,7 @@ function Home() {
 	return (
 		<Fragment>
 			<header className="w-full bg-background bg-cover relative">
-				<div className={`sticky top-0  z-10 ${navfix ? 'bg-purple-900' : ''}`}>
+				<div className={`sticky top-0  z-10 ${navfix ? 'bg-[#523970]' : ''}`}>
 					<Navbar />
 				</div>
 
@@ -78,7 +78,7 @@ function Home() {
 					<h1 className="text-gray-800">Solution For the whole</h1>
 					<h1 className=" text-gray-800">Travel Ecosystem</h1>
 				</div>
-				<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   gap-3 mt-[80px] text-purple-900">
+				<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   gap-3 mt-[80px] text-[#523970]">
 					<div class="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
 							class="w-28 h-28 rounded-md"
@@ -90,7 +90,7 @@ function Home() {
 							<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
-						<button className="border  px-5 py-1 text-sm rounded font-bold bg-purple-900 text-white mb-5">
+						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
@@ -105,7 +105,7 @@ function Home() {
 							<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
-						<button className="border  px-5 py-1 text-sm rounded font-bold bg-purple-900 text-white mb-5">
+						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
@@ -120,7 +120,7 @@ function Home() {
 							<p class=" text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
-						<button className="border  px-5 py-1 text-sm rounded font-bold bg-purple-900 text-white mb-5">
+						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
@@ -135,7 +135,7 @@ function Home() {
 							<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
-						<button className="border  px-5 py-1 text-sm rounded font-bold bg-purple-900 text-white mb-5 ">
+						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5 ">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
@@ -151,13 +151,13 @@ function Home() {
 						/>
 					</div>
 					<div className="flex flex-col flex-1">
-						<div className="text-purple-800">
+						<div className="text-[#523970]">
 							<span className="text-xl font-semibold">Our Coverage area</span>
 							<h1 className="text-4xl font-bold mt-5">Global Offices & Representation</h1>
 						</div>
 						<div className="my-5">
 							<li className="grid grid-cols-3 gap-4 text-md text-gray-400 font-semibold">
-								<a className="text-purple-800" href="/">
+								<a className="text-[#523970]" href="/">
 									Singapore
 								</a>
 								<a href="/">India</a>
