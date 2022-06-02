@@ -208,13 +208,13 @@ function Signup() {
 					<p className="text-[#685383] mb-3">You can Sign up with</p>
 					<div className="flex justify-center items-center">
 						<a href="/">
-							<img className="h-[50px] w-[70px]" src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="" />
+							<img className="h-[40px] w-[70px]" src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="" />
 						</a>
 						<a href="/">
-							<img className="h-[50px] w-[70px]" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="" />
+							<img className="h-[40px] w-[70px]" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="" />
 						</a>
 						<a href="/">
-							<img className="h-[50px] w-[70px]" src="https://cdn.pixabay.com/photo/2018/06/22/19/03/logo-3491390_1280.png" alt="" />
+							<img className="h-[40px] w-[70px]" src="https://cdn.pixabay.com/photo/2018/06/22/19/03/logo-3491390_1280.png" alt="" />
 						</a>
 					</div>
 				</div>
