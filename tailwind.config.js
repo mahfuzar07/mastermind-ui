@@ -6,6 +6,7 @@ module.exports = {
 				background: "url('/src/images/bg.jpeg')",
 				loginBg: "url('/src/images/loginbg.jpg')",
 				footerBg: "url('/src/images/footerbg.jpg')",
+				homeBg: "url('/src/images/homebg.jpg')",
 			},
 		},
 	},
