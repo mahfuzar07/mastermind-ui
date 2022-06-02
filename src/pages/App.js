@@ -1,14 +1,14 @@
 // import Signup from './Signup';
-// import Home from './Home';
+import Home from './Home';
 
-import Login from './Login';
+// import Login from './Login';
 
 function App() {
 	return (
 		<div>
-			{/* <Home /> */}
+			<Home />
 			{/* <Signup /> */}
-			<Login />
+			{/* <Login /> */}
 		</div>
 	);
 }

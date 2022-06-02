@@ -32,7 +32,7 @@ function Home() {
 						</div>
 
 						<div className="flex items-center justify-center gap-5 flex-wrap">
-							<button className="bg-white text-purple-900 px-6 py-2 rounded font-bold">
+							<button className="bg-white text-[#523970] px-6 py-2 rounded font-bold">
 								<a href="/">Sign Up Now</a>
 							</button>
 
@@ -74,20 +74,20 @@ function Home() {
 				</div>
 			</header>
 			<section className="max-w-6xl mx-auto px-5 md:mt-[10%] mt-[80%]">
-				<div className="text-center space-y-2 text-3xl font-bold mb-5">
+				<div className="text-center space-y-2 text-3xl font-bold mb-5 text-[#523970]">
 					<h4 className="text-xl font-semibold">Our Services</h4>
-					<h1 className="text-gray-800">Solution For the whole</h1>
-					<h1 className=" text-gray-800">Travel Ecosystem</h1>
+					<h1>Solution For the whole</h1>
+					<h1>Travel Ecosystem</h1>
 				</div>
 				<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   gap-3 mt-[80px] text-[#523970]">
-					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
 							className="w-28 h-28 rounded-md"
-							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
+							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
 							alt="Sunset in the mountains"
 						/>
 						<div className="px-2 py-3">
-							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+							<div className="font-bold text-xl mb-2">For Travelers</div>
 							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
@@ -95,14 +95,14 @@ function Home() {
 							<a href="/">Learn More</a>
 						</button>
 					</div>
-					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
 							className="w-28 h-28 rounded-md"
-							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
+							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
 							alt="Sunset in the mountains"
 						/>
-						<div className="px-2 py-3">
-							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+						<div className="px-2 py-3 ">
+							<div className="font-bold text-xl mb-2">For Organizers</div>
 							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
@@ -110,14 +110,14 @@ function Home() {
 							<a href="/">Learn More</a>
 						</button>
 					</div>
-					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm max-h-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
 							className="w-28 h-28 rounded-md"
-							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
+							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
 							alt="Sunset in the mountains"
 						/>
-						<div className="px-2 py-3">
-							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+						<div className="px-2 py-3 ">
+							<div className="font-bold text-xl mb-2">For Developers</div>
 							<p className=" text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
@@ -125,24 +125,24 @@ function Home() {
 							<a href="/">Learn More</a>
 						</button>
 					</div>
-					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm max-h-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
 							className="w-28 h-28 rounded-md "
-							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
+							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
 							alt="Sunset in the mountains"
 						/>
-						<div className="px-2 py-3">
-							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+						<div className="px-2 py-3 ">
+							<div className="font-bold text-xl mb-2">For Managers</div>
 							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
-						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5 ">
+						<button className="border max-h-sm   px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5 ">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
 				</div>
 			</section>
-			<section className="max-w-6xl mx-auto px-5 my-14">
+			<section className="max-w-6xl mx-auto px-5 my-10">
 				<div className="w-full flex justify-between flex-col space-y-5 md:space-x-5 md:flex-row ">
 					<div className="flex-2">
 						<img
@@ -184,8 +184,100 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="">
-				<Footer></Footer>
+			<section className="md:w-full py-5   px-5 mt-5 bg-[#DFF5FD]">
+				<div className="max-w-6xl mx-auto">
+					<div className="text-center space-y-2 text-3xl font-bold mb-5 text-[#523970]">
+						<h4 className="text-xl font-semibold">Why Mastermind</h4>
+						<h1>We're the travel platform of</h1>
+						<h1>choice for enterprises</h1>
+					</div>
+					<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   gap-3 mt-[80px] text-[#523970]">
+						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+							<img
+								className="w-28 h-28 rounded-full"
+								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
+								alt="Sunset in the mountains"
+							/>
+							<div className="px-2 py-3">
+								<div className="w-[60%] mx-auto font-bold text-lg mb-2">The Best travel option anywhere</div>
+								<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+							</div>
+						</div>
+						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+							<img
+								className="w-28 h-28 rounded-full"
+								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
+								alt="Sunset in the mountains"
+							/>
+							<div className="px-2 py-3">
+								<div className="font-bold w-[60%] mx-auto text-lg mb-2">Fast and relevant search result</div>
+								<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+							</div>
+						</div>
+						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+							<img
+								className="w-28 h-28 rounded-full"
+								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
+								alt="Sunset in the mountains"
+							/>
+							<div className="px-2 py-3">
+								<div className="w-[60%] mx-auto font-bold text-lg mb-2">Affordable price & deals</div>
+								<p className=" text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+							</div>
+						</div>
+						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+							<img
+								className="w-28 h-28 rounded-full"
+								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
+								alt="Sunset in the mountains"
+							/>
+							<div className="px-2 py-3">
+								<div className="w-[60%] mx-auto font-bold text-lg mb-2">Fast company setup</div>
+								<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className="max-w-6xl mx-auto px-5 mt-[5%]">
+				<h1 className="text-center text-[#523970] font-bold text-xl mb-5">Making Headlines</h1>
+
+				<div className="w-full flex justify-evenly md:items-center md:space-x-30 space-x-10 flex-wrap">
+					<img
+						src="https://getlogovector.com/wp-content/uploads/2020/11/tech-in-asia-logo-vector.png"
+						alt=""
+						className="h-[100px] w-[120px] "
+					/>
+					<img src="https://tbsnews.net/sites/all/themes/sloth/banner.png" alt="" className="h-[100px] w-[120px]  " />
+
+					<img src="https://www.dhakatribune.com/img/dt-1542309875718.jpg" alt="" className="h-[100px] w-[120px] " />
+
+					<img
+						src="https://logovectordl.com/wp-content/uploads/2019/12/kaler-kantho-logo-vector.png"
+						alt=""
+						className="h-[80px] w-[120px]  "
+					/>
+					<img
+						src="https://www.contactdetails247.com/admin/managebussinesscards/bussinesscardlogos/546181blob"
+						alt=""
+						className="h-[100px] w-[120px] "
+					/>
+				</div>
+			</section>
+
+			<section className="relative md:mt-[20%] mt-[120%] ">
+				<div className="absolute md:inset-x-24 inset-x-5 md:top-[-30%] top-[-45%] rounded-lg bg-footerBg bg-cover h-[55%]">
+					<div className="flex flex-col w-full  h-full justify-center items-center text-white">
+						<h1 className="max-w-lg mx-auto text-5xl text-center mt-10 font-bold leading-tight">
+							Let's make the travel experience amaing together.
+						</h1>
+						<button className="bg-white px-5 py-2 my-10 rounded font-bold text-[#523970]">
+							<a href="/">Sign Up Now</a>
+						</button>
+					</div>
+				</div>
+
+				<Footer />
 			</section>
 		</Fragment>
 	);

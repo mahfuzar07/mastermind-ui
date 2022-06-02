@@ -5,7 +5,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 function Footer() {
 	return (
 		<div className="w-full  h-full mt-10 pb-5 bg-[#523970] text-white px-5 rounded-t-lg ">
-			<div className="max-w-6xl  mx-auto h-full pt-[10%] mt-10  my-5 text-white ">
+			<div className="max-w-6xl  mx-auto h-full md:pt-[15%] pt-[30%] mt-10  my-5 text-white ">
 				<div className="flex justify-between flex-col md:flex-row gap-5 ">
 					{Link &&
 						Link.map((item) => {

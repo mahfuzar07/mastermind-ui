@@ -5,6 +5,7 @@ module.exports = {
 			backgroundImage: {
 				background: "url('/src/images/bg.jpeg')",
 				loginBg: "url('/src/images/loginbg.jpg')",
+				footerBg: "url('/src/images/footerbg.jpg')",
 			},
 		},
 	},
