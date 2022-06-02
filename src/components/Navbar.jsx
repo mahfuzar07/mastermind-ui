@@ -11,12 +11,12 @@ const Navbar = () => {
 	];
 	let [open, setOpen] = useState(false);
 	return (
-		<nav className="md:flex items-baseline justify-around text-white py-4 md:px-10 px-5">
+		<nav className="md:flex items-baseline justify-around text-white py-2 md:px-10 px-5">
 			<div className="font-bold text-3xl">
 				<a href="/">mastermind</a>
 			</div>
 
-			<div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-3 cursor-pointer md:hidden">
+			<div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-1 cursor-pointer md:hidden">
 				{open ? <CloseIcon className="text-white/75" /> : <MenuIcon className="text-white/75" />}
 			</div>
 

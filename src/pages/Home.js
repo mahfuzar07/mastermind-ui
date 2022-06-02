@@ -1,12 +1,13 @@
 import React, { Fragment, useState } from 'react';
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Home() {
 	const [navfix, setNavfix] = useState(false);
 
 	function setFixed() {
-		if (window.scrollY >= 80) {
+		if (window.scrollY >= 70) {
 			setNavfix(true);
 		} else {
 			setNavfix(false);
@@ -16,7 +17,7 @@ function Home() {
 	return (
 		<Fragment>
 			<header className="w-full bg-background bg-cover relative">
-				<div className={`sticky top-0  z-10 ${navfix ? 'bg-[#523970]' : ''}`}>
+				<div className={`z-10 ${navfix ? 'top-0 h-[10%] w-full fixed bg-[#523970]' : ''}`}>
 					<Navbar />
 				</div>
 
@@ -42,7 +43,7 @@ function Home() {
 					</div>
 				</div>
 				{/* absulate page */}
-				<div className="absolute md:inset-x-32 inset-x-5 top-[570px]   md:top-[470px]  rounded-lg shadow-xl bg-white p-3">
+				<div className="absolute md:inset-x-32 inset-x-5 md:top-[90%] top-[90%] rounded-lg shadow-xl bg-white p-3">
 					<div className="flex items-center justify-center gap-3 mb-1">
 						<AirplanemodeActiveIcon className="bg-blue-500 text-white rounded-md ring-purple-500 ring-2" />
 						<h1 className="text-center text-blue-500 font-semibold text-lg">Key Airline Partners</h1>
@@ -72,67 +73,67 @@ function Home() {
 					</div>
 				</div>
 			</header>
-			<section className="max-w-6xl mx-auto px-5 md:mt-[150px] mt-[300px]">
+			<section className="max-w-6xl mx-auto px-5 md:mt-[10%] mt-[80%]">
 				<div className="text-center space-y-2 text-3xl font-bold mb-5">
 					<h4 className="text-xl font-semibold">Our Services</h4>
 					<h1 className="text-gray-800">Solution For the whole</h1>
 					<h1 className=" text-gray-800">Travel Ecosystem</h1>
 				</div>
 				<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   gap-3 mt-[80px] text-[#523970]">
-					<div class="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
-							class="w-28 h-28 rounded-md"
+							className="w-28 h-28 rounded-md"
 							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
 							alt="Sunset in the mountains"
 						/>
-						<div class="px-2 py-3">
-							<div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-							<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+						<div className="px-2 py-3">
+							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
 						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
-					<div class="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
-							class="w-28 h-28 rounded-md"
+							className="w-28 h-28 rounded-md"
 							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
 							alt="Sunset in the mountains"
 						/>
-						<div class="px-2 py-3">
-							<div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-							<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+						<div className="px-2 py-3">
+							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
 						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
-					<div class="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
-							class="w-28 h-28 rounded-md"
+							className="w-28 h-28 rounded-md"
 							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
 							alt="Sunset in the mountains"
 						/>
-						<div class="px-2 py-3">
-							<div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-							<p class=" text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+						<div className="px-2 py-3">
+							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+							<p className=" text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
 						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5">
 							<a href="/">Learn More</a>
 						</button>
 					</div>
-					<div class="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
+					<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
 						<img
-							class="w-28 h-28 rounded-md "
+							className="w-28 h-28 rounded-md "
 							src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"
 							alt="Sunset in the mountains"
 						/>
-						<div class="px-2 py-3">
-							<div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-							<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
+						<div className="px-2 py-3">
+							<div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 						</div>
 
 						<button className="border  px-5 py-1 text-sm rounded font-bold bg-[#523970] text-white mb-5 ">
@@ -145,7 +146,7 @@ function Home() {
 				<div className="w-full flex justify-between flex-col space-y-5 md:space-x-5 md:flex-row ">
 					<div className="flex-2">
 						<img
-							class="w-full rounded-md "
+							className="w-full rounded-md "
 							src="https://i.pinimg.com/originals/d6/d1/e0/d6d1e0bbdd2eda8f44a2125154670e82.gif"
 							alt="Sunset in the mountains"
 						/>
@@ -182,6 +183,9 @@ function Home() {
 						</div>
 					</div>
 				</div>
+			</section>
+			<section className="">
+				<Footer></Footer>
 			</section>
 		</Fragment>
 	);
