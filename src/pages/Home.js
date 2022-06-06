@@ -1,6 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import plane from '../images/airplane.png';
+import ticket from '../images/plane-ticket.png';
+import time from '../images/alarm-clock.png';
 
 function Home() {
 	const [navfix, setNavfix] = useState(false);
@@ -45,38 +48,32 @@ function Home() {
 				<div className="max-w-6xl mx-auto absolute  inset-x-5 md:top-[70%] top-[60%] rounded-lg shadow-xl bg-white">
 					<div className="rounded-[25px]  bg-white/90 relative">
 						<div className="py-10">
-							<div className="w-full mx-auto shadow-lg py-2 absolute  md:top-[-10%] top-[-5%] bg-white rounded-lg">
-								{/* Tab menu*/}
-								<div className="max-w-sm mx-auto shadow-lg  mt-2 rounded-[40px] overflow-hidden  text-sm font-medium">
-									<ul class="flex text-sm font-medium text-center  rounded-lg divide-x divide-gray-200 shadow cursor-pointer ">
-										<li
-											onClick={() => maintoggleTab(1)}
-											className={`inline-block p-2 w-full transition  duration-600 ease-out  ${
-												maintoggleState === 1 ? 'border-b-[#523970] text-[#523970] border-2' : ''
-											}`}
-										>
+							{/* Tab menu*/}
+							<div className="py-5 md:w-[60%] w-full md:inset-x-5 absolute md:top-[-16%] top-[-10%] mx-auto shadow-lg  mt-2  text-sm font-medium bg-white rounded-lg">
+								<ul class="flex font-medium text-center divide-x divide-gray-500  cursor-pointer ">
+									<li onClick={() => maintoggleTab(1)} className={`w-full   ${maintoggleState === 1 ? 'text-[#523970]' : ''}`}>
+										<div className="flex justify-center align-baseline gap-2">
+											<img className="w-5 h-5" src={plane} alt="book flight" />
 											Book Flight
-										</li>
-										<li
-											onClick={() => maintoggleTab(2)}
-											className={`inline-block p-2 w-full transition  duration-600 ease-out  ${
-												maintoggleState === 2 ? 'border-b-[#523970] text-[#523970] border-2' : ''
-											}`}
-										>
+										</div>
+									</li>
+
+									<li onClick={() => maintoggleTab(2)} className={`w-full  ${maintoggleState === 2 ? ' text-[#523970]' : ''}`}>
+										<div className="flex justify-center align-baseline gap-2">
+											<img className="w-5 h-5" src={ticket} alt="book flight" />
 											Flight status
-										</li>
-										<li
-											onClick={() => maintoggleTab(3)}
-											className={`inline-block p-2 w-full transition  duration-600 ease-out ${
-												maintoggleState === 3 ? 'border-b-[#523970] text-[#523970] border-2' : ''
-											}`}
-										>
+										</div>
+									</li>
+									<li onClick={() => maintoggleTab(3)} className={`w-full ${maintoggleState === 3 ? 'text-[#523970]' : ''}`}>
+										<div className="flex justify-center align-baseline gap-2">
+											<img className="w-5 h-5" src={time} alt="book flight" />
 											Flight Schedule
-										</li>
-									</ul>
-								</div>
-								{/* End tab menu*/}
+										</div>
+									</li>
+								</ul>
 							</div>
+							{/* End tab menu*/}
+
 							{/* Tab menu 2*/}
 							<div className="max-w-sm mx-auto shadow-lg  mt-2 rounded-[40px] overflow-hidden  text-sm font-medium">
 								<ul class="flex text-sm font-medium text-center  rounded-lg divide-x divide-gray-200 shadow cursor-pointer ">

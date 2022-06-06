@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from '../data/footer1.json';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import facebook from '../images/social icon/facebook.png';
+import instagram from '../images/social icon/instagram.png';
+import linkedin from '../images/social icon/linkedin.png';
 
 function Footer() {
 	return (
@@ -32,10 +34,16 @@ function Footer() {
 								accusamus deserunt distinctio iusto.
 							</p>
 						</div>
-						<div className="mb-2 space-x-3 ">
-							<FacebookOutlinedIcon fontSize="large" />
-							<FacebookOutlinedIcon fontSize="large" />
-							<FacebookOutlinedIcon fontSize="large" />
+						<div className="flex gap-3 mb-2">
+							<a href="/">
+								<img className="w-10 h-10 rounded-md" src={facebook} alt="facebook" />
+							</a>
+							<a href="/">
+								<img className="w-10 h-10 rounded-md " src={linkedin} alt="facebook" />
+							</a>
+							<a href="/">
+								<img className="w-10 h-10 rounded-md " src={instagram} alt="facebook" />
+							</a>
 						</div>
 					</div>
 					<div className="">

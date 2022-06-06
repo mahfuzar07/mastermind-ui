@@ -1,14 +1,16 @@
 import { React, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	let Links = [
-		{ name: 'Home', link: '/' },
+		{ name: 'Home', link: '/home' },
 		{ name: 'Solution', link: '/' },
 		{ name: 'About Us', link: '/' },
 		{ name: 'Contact us', link: '/' },
 	];
+
 	let [open, setOpen] = useState(false);
 	return (
 		<nav className="md:flex items-baseline justify-around text-white py-2 md:px-10 px-5">
@@ -27,16 +29,18 @@ const Navbar = () => {
 			>
 				{Links.map((link) => (
 					<li key={link.name} className="md:ml-8  md:my-0 my-7">
-						<a href={link.link} className="duration-500 ">
+						<Link to={link.link} className="duration-500 ">
 							{link.name}
-						</a>
+						</Link>
 					</li>
 				))}
 				<li className="md:hidden my-3">
-					<a href="/">Login</a>
+					{/* <a href="/">Login</a> */}
+					<Link to="login">Login</Link>
 				</li>
 				<li className="md:hidden">
-					<a href="/">Create An Account</a>
+					<Link to="signup">Create An Account</Link>
+					{/* <a href="/">Create An Account</a> */}
 				</li>
 			</ul>
 
@@ -44,12 +48,13 @@ const Navbar = () => {
 				<button className="border px-2 rounded mr-8">
 					<a href="/">En</a>
 				</button>
+
 				<button className="">
-					<a href="/">Login</a>
+					<Link to="/login">Login</Link>
 				</button>
 
 				<button className="bg-white text-purple-900 px-5 py-1 rounded font-bold">
-					<a href="/">Sign Up</a>
+					<Link to="/signup">Sign Up</Link>
 				</button>
 			</div>
 		</nav>
