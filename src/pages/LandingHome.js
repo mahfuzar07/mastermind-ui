@@ -2,6 +2,16 @@ import React, { Fragment, useState } from 'react';
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import compassgif from '../images/Compass.gif';
+import developer from '../images/Developer.gif';
+import note from '../images/Note.gif';
+import manager from '../images/Manager.gif';
+import wflight from '../images/World Flight.gif';
+
+import tour from '../images/tour.gif';
+import search from '../images/Search.gif';
+import cost from '../images/Low Cost.gif';
+import meesanger from '../images/messanger.gif';
 
 function LandingHome() {
 	const [navfix, setNavfix] = useState(false);
@@ -16,7 +26,7 @@ function LandingHome() {
 	window.addEventListener('scroll', setFixed);
 	return (
 		<Fragment>
-			<header className="w-full bg-background bg-cover relative">
+			<header className="w-full bg-background bg-no-repeat bg-cover relative ">
 				<div className={`z-10 ${navfix ? 'top-0 h-[10%] w-full fixed bg-[#523970]' : ''}`}>
 					<Navbar />
 				</div>
@@ -81,11 +91,11 @@ function LandingHome() {
 				</div>
 				<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   gap-3 mt-[80px] text-[#523970]">
 					<div className="max-w-sm overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-						<img
-							className="w-28 h-28 rounded-md"
-							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
-							alt="Sunset in the mountains"
-						/>
+						{/* <div className="w-28 h-28 bg-blue-600 rounded-md flex justify-center items-center">
+
+						</div> */}
+						<img className="w-28 h-28 bg-[#6488EA] rounded-md" src={compassgif} alt="Sunset in the mountains" />
+
 						<div className="px-2 py-3">
 							<div className="font-bold text-xl mb-2">For Travelers</div>
 							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
@@ -96,11 +106,7 @@ function LandingHome() {
 						</button>
 					</div>
 					<div className="max-w-sm overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-						<img
-							className="w-28 h-28 rounded-md"
-							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
-							alt="Sunset in the mountains"
-						/>
+						<img className="w-28 h-28 rounded-md bg-[#6488EA] " src={note} alt="Sunset in the mountains" />
 						<div className="px-2 py-3 ">
 							<div className="font-bold text-xl mb-2">For Organizers</div>
 							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
@@ -111,11 +117,7 @@ function LandingHome() {
 						</button>
 					</div>
 					<div className="max-w-sm max-h-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-						<img
-							className="w-28 h-28 rounded-md"
-							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
-							alt="Sunset in the mountains"
-						/>
+						<img className="w-28 h-28 rounded-md bg-[#6488EA]" src={developer} alt="Sunset in the mountains" />
 						<div className="px-2 py-3 ">
 							<div className="font-bold text-xl mb-2">For Developers</div>
 							<p className=" text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
@@ -126,11 +128,7 @@ function LandingHome() {
 						</button>
 					</div>
 					<div className="max-w-sm max-h-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-						<img
-							className="w-28 h-28 rounded-md "
-							src="https://cdn.dribbble.com/users/330915/screenshots/6170423/1_travel_anim.gif"
-							alt="Sunset in the mountains"
-						/>
+						<img className="w-28 h-28 rounded-md bg-[#6488EA]" src={manager} alt="Sunset in the mountains" />
 						<div className="px-2 py-3 ">
 							<div className="font-bold text-xl mb-2">For Managers</div>
 							<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
@@ -142,14 +140,10 @@ function LandingHome() {
 					</div>
 				</div>
 			</section>
-			<section className="max-w-6xl mx-auto px-5 my-10">
-				<div className="w-full flex justify-between flex-col space-y-5 md:space-x-5 md:flex-row ">
+			<section className="max-w-6xl mx-auto px-5 md:mt-5 mt-10">
+				<div className="w-full flex justify-between flex-col space-y-5 md:space-x-24 md:flex-row">
 					<div className="flex-2">
-						<img
-							className="w-full rounded-md "
-							src="https://i.pinimg.com/originals/d6/d1/e0/d6d1e0bbdd2eda8f44a2125154670e82.gif"
-							alt="Sunset in the mountains"
-						/>
+						<img className="w-full  rounded-md " src={wflight} alt="Sunset in the mountains" />
 					</div>
 					<div className="flex flex-col flex-1">
 						<div className="text-[#523970]">
@@ -184,7 +178,7 @@ function LandingHome() {
 					</div>
 				</div>
 			</section>
-			<section className="md:w-full py-5   px-5 mt-5 bg-[#DFF5FD]">
+			<section className="md:w-full py-5   px-5 md:mt-0 mt-5 bg-[#DFF5FD]">
 				<div className="max-w-6xl mx-auto">
 					<div className="text-center space-y-2 text-3xl font-bold mb-5 text-[#523970]">
 						<h4 className="text-xl font-semibold">Why Mastermind</h4>
@@ -193,44 +187,28 @@ function LandingHome() {
 					</div>
 					<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   gap-3 mt-[80px] text-[#523970]">
 						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-							<img
-								className="w-28 h-28 rounded-full"
-								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
-								alt="Sunset in the mountains"
-							/>
+							<img className="w-28 h-28 rounded-full bg-white" src={tour} alt="Sunset in the mountains" />
 							<div className="px-2 py-3">
 								<div className="w-[60%] mx-auto font-bold text-lg mb-2">The Best travel option anywhere</div>
 								<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 							</div>
 						</div>
 						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-							<img
-								className="w-28 h-28 rounded-full"
-								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
-								alt="Sunset in the mountains"
-							/>
+							<img className="w-28 h-28 rounded-full bg-white" src={search} alt="Sunset in the mountains" />
 							<div className="px-2 py-3">
 								<div className="font-bold w-[60%] mx-auto text-lg mb-2">Fast and relevant search result</div>
 								<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 							</div>
 						</div>
 						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-							<img
-								className="w-28 h-28 rounded-full"
-								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
-								alt="Sunset in the mountains"
-							/>
+							<img className="w-28 h-28 rounded-full" src={cost} alt="Sunset in the mountains" />
 							<div className="px-2 py-3">
 								<div className="w-[60%] mx-auto font-bold text-lg mb-2">Affordable price & deals</div>
 								<p className=" text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
 							</div>
 						</div>
 						<div className="max-w-sm  overflow-hidden  flex justify-center items-center flex-col text-center mb-5">
-							<img
-								className="w-28 h-28 rounded-full"
-								src="https://31.media.tumblr.com/1b5956b53563160c6754f67132b10989/tumblr_n0dz04ZQ9S1r40mo0o1_500.gif"
-								alt="Sunset in the mountains"
-							/>
+							<img className="w-28 h-28 rounded-full bg-white" src={meesanger} alt="Sunset in the mountains" />
 							<div className="px-2 py-3">
 								<div className="w-[60%] mx-auto font-bold text-lg mb-2">Fast company setup</div>
 								<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!</p>
