@@ -45,219 +45,206 @@ function Home() {
 					</div>
 				</div>
 				{/* absulate page */}
-				<div className="max-w-6xl mx-auto absolute  inset-x-5 md:top-[70%] top-[60%] rounded-lg shadow-xl bg-white">
-					<div className="rounded-[25px]  bg-white/90 relative">
-						<div className="py-10">
-							{/* Tab menu*/}
-							<div className="py-5 md:w-[60%] w-full md:inset-x-5 absolute md:top-[-16%] top-[-10%] mx-auto shadow-lg  mt-2  text-sm font-medium bg-white rounded-lg">
-								<ul class="flex font-medium text-center divide-x divide-gray-500  cursor-pointer ">
-									<li onClick={() => maintoggleTab(1)} className={`w-full   ${maintoggleState === 1 ? 'text-[#523970]' : ''}`}>
-										<div className="flex justify-center align-baseline gap-2">
-											<img className="w-5 h-5" src={plane} alt="book flight" />
-											Book Flight
-										</div>
-									</li>
-
-									<li onClick={() => maintoggleTab(2)} className={`w-full  ${maintoggleState === 2 ? ' text-[#523970]' : ''}`}>
-										<div className="flex justify-center align-baseline gap-2">
-											<img className="w-5 h-5" src={ticket} alt="book flight" />
-											Flight status
-										</div>
-									</li>
-									<li onClick={() => maintoggleTab(3)} className={`w-full ${maintoggleState === 3 ? 'text-[#523970]' : ''}`}>
-										<div className="flex justify-center align-baseline gap-2">
-											<img className="w-5 h-5" src={time} alt="book flight" />
-											Flight Schedule
-										</div>
-									</li>
-								</ul>
-							</div>
-							{/* End tab menu*/}
-
-							{/* Tab menu 2*/}
-							<div className="max-w-sm mx-auto shadow-lg  mt-2 rounded-[40px] overflow-hidden  text-sm font-medium">
-								<ul class="flex text-sm font-medium text-center  rounded-lg divide-x divide-gray-200 shadow cursor-pointer ">
-									<li
-										onClick={() => toggleTab(1)}
-										className={`inline-block p-4 w-full transition  duration-600 ease-out delay-100 ${
-											toggleState === 1 ? ' bg-[#523970] text-white ' : ''
-										}`}
-									>
-										One Way
-									</li>
-									<li
-										onClick={() => toggleTab(2)}
-										className={` inline-block p-4 w-full transition  duration-600 ease-out delay-100 ${
-											toggleState === 2 ? ' bg-[#523970] text-white ' : ''
-										}`}
-									>
-										Round Trip
-									</li>
-									<li
-										onClick={() => toggleTab(3)}
-										className={` inline-block p-4 w-full transition  duration-600 ease-out delay-100 ${
-											toggleState === 3 ? ' bg-[#523970] text-white ' : ''
-										}`}
-									>
-										Multi-City
-									</li>
-								</ul>
-							</div>
-							{/* End tab menu 2*/}
-
-							{/* main tab 1 */}
-							<div className={`${maintoggleState === 1 ? 'visible' : 'hidden mt-5'}`}>
-								{/* tab content-1 */}
-								<div
-									className={`max-w-6xl mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap ${
-										toggleState === 1 ? 'visible' : 'hidden'
-									}`}
-								>
-									<div className="ml-2 rounded-md  border flex flex-col md:flex-row gap-2 md:divide-x text-[#523970]">
-										<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
-											<label className="text-[0.8rem]" htmlFor="">
-												Flying from
-											</label>
-											<input placeholder="Dhaka" className="bg-transparent my-2  outline-none text-lg font-bold" type="text" />
-											<p className="text-[0.8rem] font-bold"> Hazrat shahjalal Airport</p>
-										</div>
-										<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
-											<label className="text-[0.8rem]" for="">
-												Flying to
-											</label>
-											<input
-												placeholder="Coxs Bazar"
-												className="bg-transparent my-2 outline-none text-lg font-bold"
-												type="text"
-											/>
-											<p className="text-[0.8rem] font-bold"> Cox'x Bazar Airport</p>
-										</div>
+				<div className="max-w-6xl  mx-auto absolute  inset-x-5 md:top-[70%] top-[60%] rounded-lg shadow-xl bg-white">
+					<div className="rounded-[25px]  bg-white/90 relative py-10">
+						{/* Tab menu*/}
+						<div className="py-5 md:w-[60%] w-full mx-auto  absolute md:top-[-16%] md:inset-x-5  top-[-10%] shadow-lg  text-sm font-medium bg-white rounded-lg">
+							<ul class="flex font-medium text-center divide-x divide-gray-500  cursor-pointer ">
+								<li onClick={() => maintoggleTab(1)} className={`w-full   ${maintoggleState === 1 ? 'text-[#523970]' : ''}`}>
+									<div className="flex justify-center align-baseline gap-2">
+										<img className="w-5 h-5" src={plane} alt="book flight" />
+										Book Flight
 									</div>
+								</li>
 
-									<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1 border rounded-md text-[#523970]">
-										<label className="text-[0.8rem]" for="">
-											Select Date
-										</label>
-										<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
-										<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
+								<li onClick={() => maintoggleTab(2)} className={`w-full  ${maintoggleState === 2 ? ' text-[#523970]' : ''}`}>
+									<div className="flex justify-center align-baseline gap-2">
+										<img className="w-5 h-5" src={ticket} alt="flight status" />
+										Flight status
 									</div>
-									<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1  border rounded-md text-[#523970]">
-										<p className="text-[0.8rem]">Passengers & Cabin Class</p>
-										<p className="bg-transparent my-2 text-lg font-bold"> 4 person </p>
-
-										<p className="text-[0.8rem] font-bold"> Bussiness Class</p>
+								</li>
+								<li onClick={() => maintoggleTab(3)} className={`w-full ${maintoggleState === 3 ? 'text-[#523970]' : ''}`}>
+									<div className="flex justify-center align-baseline gap-2">
+										<img className="w-5 h-5" src={time} alt="flight schedule" />
+										Flight Schedule
 									</div>
-								</div>
-								{/* End tab content-1 */}
-								{/* tab content-2 */}
-								<div
-									className={`max-w-6xl mx-auto mt-5 flex justify-center flex-col md:flex-row gap-1 flex-wrap ${
-										toggleState === 2 ? 'visible' : 'hidden'
-									}`}
-								>
-									<div className="ml-2 md:ml-0 rounded-md  border flex flex-col md:flex-row gap-1 md:divide-x text-[#523970]">
-										<div className="flex flex-col justify-start p-3 md:p-1">
-											<label className="text-[0.8rem]" htmlFor="">
-												Flying from
-											</label>
-											<input placeholder="Dhaka" className="bg-transparent my-2  outline-none text-lg font-bold" type="text" />
-											<p className="text-[0.8rem] font-bold"> Hazrat shahjalal Airport</p>
-										</div>
-										<div className="flex flex-col justify-start p-3 md:p-1">
-											<label className="text-[0.8rem]" htmlFor="">
-												Flying to
-											</label>
-											<input
-												placeholder="Coxs Bazar"
-												className="bg-transparent my-2 outline-none text-lg font-bold"
-												type="text"
-											/>
-											<p className="text-[0.8rem] font-bold"> Cox'x Bazar Airport</p>
-										</div>
-									</div>
-									<div className="ml-2 md:ml-0 rounded-md  border flex flex-col md:flex-row gap-2 md:divide-x text-[#523970]">
-										<div className="flex flex-col justify-start p-3 md:p-1 text-sm font-medium">
-											<label className="text-[0.8rem]" htmlFor="">
-												Select Date
-											</label>
-											<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
-											<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
-										</div>
-										<div className="flex flex-col justify-start p-3 md:p-1 text-sm font-medium ">
-											<label className="text-[0.8rem]" htmlFor="">
-												Select Date
-											</label>
-											<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
-											<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
-										</div>
-									</div>
-
-									<div className="ml-2 md:ml-0 flex flex-col justify-start p-3 md:p-1 border rounded-md text-[#523970]">
-										<label className="text-[0.8rem]" htmlFor="">
-											Passengers & Cabin Class
-										</label>
-										<span className="bg-transparent my-2 outline-none text-lg font-bold">1 Person</span>
-
-										<p className="text-[0.8rem] font-bold"> Bussiness Class</p>
-									</div>
-								</div>
-								{/* End tab content-2*/}
-								{/* tab content-3 */}
-								<div
-									className={`max-w-6xl mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap  ${
-										toggleState === 3 ? 'visible' : 'hidden'
-									}`}
-								>
-									<div className="rounded-md  border flex flex-col md:flex-row gap-2 md:divide-x text-[#523970]">
-										<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
-											<label className="text-[0.8rem]" htmlFor="">
-												Flying from
-											</label>
-											<input placeholder="Dhaka" className="bg-transparent my-2  outline-none text-lg font-bold" type="text" />
-											<p className="text-[0.8rem] font-bold"> Hazrat shahjalal Airport</p>
-										</div>
-										<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
-											<label className="text-[0.8rem]" for="">
-												Flying to
-											</label>
-											<input
-												placeholder="Coxs Bazar"
-												className="bg-transparent my-2 outline-none text-lg font-bold"
-												type="text"
-											/>
-											<p className="text-[0.8rem] font-bold"> Cox'x Bazar Airport</p>
-										</div>
-									</div>
-									<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1 border rounded-md text-[#523970]">
-										<label className="text-[0.8rem]" for="">
-											Select Date
-										</label>
-										<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
-										<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
-									</div>
-									<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1  border rounded-md text-[#523970]">
-										<p className="text-[0.8rem]">Passengers & Cabin Class</p>
-										<p className="bg-transparent my-2 text-lg font-bold"> 4 person </p>
-
-										<p className="text-[0.8rem] font-bold"> Bussiness Class</p>
-									</div>
-								</div>
-
-								{/* End tab content-3*/}
-							</div>
-							{/* End main tab 1 */}
-
-							{/* main tab 2 */}
-							<div className={`${maintoggleState === 2 ? 'visible' : 'hidden mt-5'}`}>
-								<div className="max-w-6xl w-full mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap ">No Item</div>
-							</div>
-							{/* End main tab 2 */}
-							{/* main tab 3 */}
-							<div className={`${maintoggleState === 3 ? 'visible' : 'hidden mt-5'}`}>
-								<div className="max-w-6xl w-full mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap ">No Item</div>
-							</div>
-							{/* End main tab 3 */}
+								</li>
+							</ul>
 						</div>
+						{/* End tab menu*/}
+
+						{/* Tab menu 2*/}
+						<div className="max-w-sm mx-auto shadow-lg  mt-2 rounded-[40px] overflow-hidden  text-sm font-medium">
+							<ul class="flex text-sm font-medium text-center  rounded-lg divide-x divide-gray-200 shadow cursor-pointer ">
+								<li
+									onClick={() => toggleTab(1)}
+									className={`inline-block p-4 w-full transition  duration-600 ease-out delay-100 ${
+										toggleState === 1 ? ' bg-[#523970] text-white ' : ''
+									}`}
+								>
+									One Way
+								</li>
+								<li
+									onClick={() => toggleTab(2)}
+									className={` inline-block p-4 w-full transition  duration-600 ease-out delay-100 ${
+										toggleState === 2 ? ' bg-[#523970] text-white ' : ''
+									}`}
+								>
+									Round Trip
+								</li>
+								<li
+									onClick={() => toggleTab(3)}
+									className={` inline-block p-4 w-full transition  duration-600 ease-out delay-100 ${
+										toggleState === 3 ? ' bg-[#523970] text-white ' : ''
+									}`}
+								>
+									Multi-City
+								</li>
+							</ul>
+						</div>
+						{/* End tab menu 2*/}
+
+						{/* main tab 1 */}
+						<div className={`${maintoggleState === 1 ? 'visible' : 'hidden mt-5'}`}>
+							{/* tab content-1 */}
+							<div
+								className={`max-w-6xl mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap ${
+									toggleState === 1 ? 'visible' : 'hidden'
+								}`}
+							>
+								<div className="ml-2 rounded-md  border flex flex-col md:flex-row gap-2 md:divide-x text-[#523970]">
+									<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
+										<label className="text-[0.8rem]" htmlFor="">
+											Flying from
+										</label>
+										<input placeholder="Dhaka" className="bg-transparent my-2  outline-none text-lg font-bold" type="text" />
+										<p className="text-[0.8rem] font-bold"> Hazrat shahjalal Airport</p>
+									</div>
+									<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
+										<label className="text-[0.8rem]" for="">
+											Flying to
+										</label>
+										<input placeholder="Coxs Bazar" className="bg-transparent my-2 outline-none text-lg font-bold" type="text" />
+										<p className="text-[0.8rem] font-bold"> Cox'x Bazar Airport</p>
+									</div>
+								</div>
+
+								<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1 border rounded-md text-[#523970]">
+									<label className="text-[0.8rem]" for="">
+										Select Date
+									</label>
+									<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
+									<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
+								</div>
+								<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1  border rounded-md text-[#523970]">
+									<p className="text-[0.8rem]">Passengers & Cabin Class</p>
+									<p className="bg-transparent my-2 text-lg font-bold"> 4 person </p>
+
+									<p className="text-[0.8rem] font-bold"> Bussiness Class</p>
+								</div>
+							</div>
+							{/* End tab content-1 */}
+							{/* tab content-2 */}
+							<div
+								className={`max-w-6xl mx-auto mt-5 flex justify-center flex-col md:flex-row gap-1 flex-wrap ${
+									toggleState === 2 ? 'visible' : 'hidden'
+								}`}
+							>
+								<div className="ml-2 md:ml-0 rounded-md  border flex flex-col md:flex-row gap-1 md:divide-x text-[#523970]">
+									<div className="flex flex-col justify-start p-3 md:p-1">
+										<label className="text-[0.8rem]" htmlFor="">
+											Flying from
+										</label>
+										<input placeholder="Dhaka" className="bg-transparent my-2  outline-none text-lg font-bold" type="text" />
+										<p className="text-[0.8rem] font-bold"> Hazrat shahjalal Airport</p>
+									</div>
+									<div className="flex flex-col justify-start p-3 md:p-1">
+										<label className="text-[0.8rem]" htmlFor="">
+											Flying to
+										</label>
+										<input placeholder="Coxs Bazar" className="bg-transparent my-2 outline-none text-lg font-bold" type="text" />
+										<p className="text-[0.8rem] font-bold"> Cox'x Bazar Airport</p>
+									</div>
+								</div>
+								<div className="ml-2 md:ml-0 rounded-md  border flex flex-col md:flex-row gap-2 md:divide-x text-[#523970]">
+									<div className="flex flex-col justify-start p-3 md:p-1 text-sm font-medium">
+										<label className="text-[0.8rem]" htmlFor="">
+											Select Date
+										</label>
+										<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
+										<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
+									</div>
+									<div className="flex flex-col justify-start p-3 md:p-1 text-sm font-medium ">
+										<label className="text-[0.8rem]" htmlFor="">
+											Select Date
+										</label>
+										<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
+										<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
+									</div>
+								</div>
+
+								<div className="ml-2 md:ml-0 flex flex-col justify-start p-3 md:p-1 border rounded-md text-[#523970]">
+									<label className="text-[0.8rem]" htmlFor="">
+										Passengers & Cabin Class
+									</label>
+									<span className="bg-transparent my-2 outline-none text-lg font-bold">1 Person</span>
+
+									<p className="text-[0.8rem] font-bold"> Bussiness Class</p>
+								</div>
+							</div>
+							{/* End tab content-2*/}
+							{/* tab content-3 */}
+							<div
+								className={`max-w-6xl mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap  ${
+									toggleState === 3 ? 'visible' : 'hidden'
+								}`}
+							>
+								<div className="rounded-md  border flex flex-col md:flex-row gap-2 md:divide-x text-[#523970]">
+									<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
+										<label className="text-[0.8rem]" htmlFor="">
+											Flying from
+										</label>
+										<input placeholder="Dhaka" className="bg-transparent my-2  outline-none text-lg font-bold" type="text" />
+										<p className="text-[0.8rem] font-bold"> Hazrat shahjalal Airport</p>
+									</div>
+									<div className="md:w-[250px] flex flex-col justify-start p-3 md:p-1">
+										<label className="text-[0.8rem]" for="">
+											Flying to
+										</label>
+										<input placeholder="Coxs Bazar" className="bg-transparent my-2 outline-none text-lg font-bold" type="text" />
+										<p className="text-[0.8rem] font-bold"> Cox'x Bazar Airport</p>
+									</div>
+								</div>
+								<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1 border rounded-md text-[#523970]">
+									<label className="text-[0.8rem]" for="">
+										Select Date
+									</label>
+									<input className="bg-transparent my-2 outline-none text-lg font-bold" type="date" />
+									<p className="text-[0.8rem] font-bold"> 2022, Wednesday</p>
+								</div>
+								<div className="md:w-[250px] ml-2 flex flex-col justify-start p-3 md:p-1  border rounded-md text-[#523970]">
+									<p className="text-[0.8rem]">Passengers & Cabin Class</p>
+									<p className="bg-transparent my-2 text-lg font-bold"> 4 person </p>
+
+									<p className="text-[0.8rem] font-bold"> Bussiness Class</p>
+								</div>
+							</div>
+
+							{/* End tab content-3*/}
+						</div>
+						{/* End main tab 1 */}
+
+						{/* main tab 2 */}
+						<div className={`${maintoggleState === 2 ? 'visible' : 'hidden mt-5'}`}>
+							<div className="max-w-6xl p-5 w-full mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap ">No Item</div>
+						</div>
+						{/* End main tab 2 */}
+						{/* main tab 3 */}
+						<div className={`${maintoggleState === 3 ? 'visible' : 'hidden mt-5'}`}>
+							<div className="max-w-6xl p-5 w-full mx-auto mt-5 flex justify-center flex-col md:flex-row gap-2 flex-wrap ">No Item</div>
+						</div>
+						{/* End main tab 3 */}
+
 						<div className="text-center text-white absolute md:top-[90%] top-[97%] inset-x-5">
 							<button className="bg-[#523970] py-2 px-6 hover:bg-[#614a7c] rounded-xl">Search Flight</button>
 						</div>
