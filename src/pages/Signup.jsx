@@ -20,7 +20,7 @@ function Signup() {
 							<option>Nepal</option>
 						</select>
 					</div>
-					<div className="max-w-6xl w-full flex space-y-10 md:space-y-0 flex-col md:flex-row items-center justify-between px-5   mx-auto mt-12 md:gap-5">
+					<div className="container  w-full flex space-y-10 md:space-y-0 flex-col md:flex-row items-center justify-between px-10   mx-auto mt-12 md:gap-5">
 						{/* company information form */}
 						<div className="md:w-[50%] w-full shadow-lg relative border pt-[50px] px-4 rounded-xl">
 							<h1 className="bg-[#523970] text-center  py-2 absolute top-[-20px] rounded-md inset-x-12 text-white">

@@ -83,7 +83,7 @@ function LandingHome() {
 					</div>
 				</div>
 			</header>
-			<section className="max-w-6xl mx-auto px-5 md:mt-[10%] mt-[80%]">
+			<section className="container mx-auto px-10 md:mt-[10%] mt-[80%]">
 				<div className="text-center space-y-2 text-3xl font-bold mb-5 text-[#523970]">
 					<h4 className="text-xl font-semibold">Our Services</h4>
 					<h1>Solution For the whole</h1>
@@ -140,7 +140,7 @@ function LandingHome() {
 					</div>
 				</div>
 			</section>
-			<section className="max-w-6xl mx-auto px-5 md:mt-5 mt-10">
+			<section className="container mx-auto px-10 md:mt-5 mt-10">
 				<div className="w-full flex justify-between flex-col space-y-5 md:space-x-24 md:flex-row">
 					<div className="flex-2">
 						<img className="w-full  rounded-md " src={wflight} alt="Sunset in the mountains" />
@@ -178,8 +178,8 @@ function LandingHome() {
 					</div>
 				</div>
 			</section>
-			<section className="md:w-full py-5   px-5 md:mt-0 mt-5 bg-[#DFF5FD]">
-				<div className="max-w-6xl mx-auto">
+			<section className="md:w-full py-5   px-10 md:mt-0 mt-5 bg-[#DFF5FD]">
+				<div className="container mx-auto px-10">
 					<div className="text-center space-y-2 text-3xl font-bold mb-5 text-[#523970]">
 						<h4 className="text-xl font-semibold">Why Mastermind</h4>
 						<h1>We're the travel platform of</h1>
@@ -217,7 +217,7 @@ function LandingHome() {
 					</div>
 				</div>
 			</section>
-			<section className="max-w-6xl mx-auto px-5 mt-[5%]">
+			<section className="container mx-auto px-10 mt-[5%]">
 				<h1 className="text-center text-[#523970] font-bold text-xl mb-5">Making Headlines</h1>
 
 				<div className="w-full flex justify-evenly md:items-center md:space-x-30 space-x-10 flex-wrap">

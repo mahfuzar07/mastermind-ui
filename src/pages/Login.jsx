@@ -7,7 +7,7 @@ function Login() {
 			<div className="top-0 h-[10%] w-full fixed bg-[#523970]">
 				<Navbar />
 			</div>
-			<div className="max-w-6xl w-full mx-auto  flex justify-between flex-col-reverse md:flex-row pt-[9%] md:pt-[7%]  pb-10">
+			<div className="container w-full mx-auto px-10 flex justify-between flex-col-reverse md:flex-row pt-[9%] md:pt-[7%]  pb-10">
 				<div className="max-w-xl flex-2 p-5 flex flex-col items-center justify-center text-center text-white ">
 					<div className="w-md text-6xl mb-5 font-semibold">
 						<h1>One Platform</h1>
