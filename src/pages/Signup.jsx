@@ -14,7 +14,7 @@ function Signup() {
 						<label htmlFor="label" className="font-semibold">
 							Select Country
 						</label>
-						<select class="border border-blue-500 py-1 px-4 pr-8 rounded  focus:outline-none focus:bg-white focus:border-gray-500 text-black">
+						<select className="border border-blue-500 py-1 px-4 pr-8 rounded  focus:outline-none focus:bg-white focus:border-gray-500 text-black">
 							<option>Bangladesh</option>
 							<option>India</option>
 							<option>Nepal</option>
@@ -27,85 +27,85 @@ function Signup() {
 								Company Information
 							</h1>
 
-							<div class="flex flex-wrap -mx-3 mb-2">
-								<div class="w-full md:w-1/2 px-3">
-									<label class="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+							<div className="flex flex-wrap -mx-3 mb-2">
+								<div className="w-full md:w-1/2 px-3">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Company Name
 									</label>
 									<input
-										class="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
+										className="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
 										type="text"
 										placeholder="Name of the Company"
 									/>
 								</div>
-								<div class="w-full md:w-1/2 px-3 ">
-									<label class="block tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+								<div className="w-full md:w-1/2 px-3 ">
+									<label className="block tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										IATA Membership Code
 									</label>
 									<input
-										class="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
+										className="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
 										type="text"
 										placeholder="IATA Number"
 									/>
 								</div>
 							</div>
-							<div class="flex flex-wrap -mx-3 mb-2">
-								<div class="w-full md:w-1/2 px-3 ">
-									<label class="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+							<div className="flex flex-wrap -mx-3 mb-2">
+								<div className="w-full md:w-1/2 px-3 ">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Website
 									</label>
 									<input
-										class="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
+										className="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
 										type="text"
 										placeholder="Website URL"
 									/>
 								</div>
-								<div class="w-full md:w-1/2 px-3">
-									<label class="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+								<div className="w-full md:w-1/2 px-3">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Email address
 									</label>
 									<input
-										class="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
+										className="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
 										type="email"
 										placeholder="Bussiness email address"
 									/>
 								</div>
 							</div>
-							<div class="flex flex-wrap -mx-3 mb-2">
-								<div class="w-full md:w-1/2 px-3 ">
-									<label class="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+							<div className="flex flex-wrap -mx-3 mb-2">
+								<div className="w-full md:w-1/2 px-3 ">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Phone number
 									</label>
 									<input
-										class="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
+										className="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
 										type="phone"
 										placeholder="Phone Number"
 									/>
 								</div>
-								<div class="w-full md:w-1/2 px-3 ">
-									<label class="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+								<div className="w-full md:w-1/2 px-3 ">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Address
 									</label>
 									<input
-										class="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
+										className="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
 										type="text"
 										placeholder="Enter Address"
 									/>
 								</div>
 							</div>
-							<div class="flex flex-wrap -mx-3 mb-2">
-								<div class="w-full md:w-1/2 px-3">
-									<label class="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+							<div className="flex flex-wrap -mx-3 mb-2">
+								<div className="w-full md:w-1/2 px-3">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										City
 									</label>
 									<input
-										class="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
+										className="appearance-none block w-full border-[#523970] text-[#523970] border  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
 										type="text"
 										placeholder="Enter City"
 									/>
 								</div>
 								<div className="w-full md:w-1/2 px-3">
-									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Zip/Postal Code
 									</label>
 									<input
@@ -124,7 +124,7 @@ function Signup() {
 
 							<div className="flex flex-wrap -mx-3 mb-2">
 								<div className="w-full md:w-1/2 px-3 ">
-									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										First Name
 									</label>
 									<input
@@ -134,7 +134,7 @@ function Signup() {
 									/>
 								</div>
 								<div className="w-full md:w-1/2 px-3 ">
-									<label className="block tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+									<label className="block tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Last Name
 									</label>
 									<input
@@ -146,7 +146,7 @@ function Signup() {
 							</div>
 							<div className="flex flex-wrap -mx-3 mb-2">
 								<div className="w-full md:w-1/2 px-3 ">
-									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Phone Number
 									</label>
 									<input
@@ -156,7 +156,7 @@ function Signup() {
 									/>
 								</div>
 								<div className="w-full md:w-1/2 px-3">
-									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Email address
 									</label>
 									<input
@@ -168,7 +168,7 @@ function Signup() {
 							</div>
 							<div className="flex flex-wrap -mx-3 mb-2">
 								<div className="w-full  px-3">
-									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Password
 									</label>
 									<input
@@ -180,7 +180,7 @@ function Signup() {
 							</div>
 							<div className="flex flex-wrap -mx-3 mb-2">
 								<div className="w-full  px-3 ">
-									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+									<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 										Re-Enter Password
 									</label>
 									<input

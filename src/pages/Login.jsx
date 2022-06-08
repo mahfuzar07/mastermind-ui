@@ -9,11 +9,11 @@ function Login() {
 			</div>
 			<div className="container w-full mx-auto px-10 flex justify-between flex-col-reverse md:flex-row pt-[9%] md:pt-[7%]  pb-10">
 				<div className="max-w-xl flex-2 p-5 flex flex-col items-center justify-center text-center text-white ">
-					<div className="w-md text-6xl mb-5 font-semibold">
+					<div className="w-md text-5xl mb-5 font-semibold">
 						<h1>One Platform</h1>
 						<h1> All travel Solutions</h1>
 					</div>
-					<div className="max-w-md  mx-auto text-xl  mb-5">
+					<div className="max-w-md  mx-auto text-lg  mb-5">
 						<p>We make it easy to plan your travel, automate your expenses and provide valiable insight</p>
 					</div>
 				</div>
@@ -22,10 +22,10 @@ function Login() {
 					<h1 className="text-center text-2xl font-bold md:mb-[2%] mb-[10%] text-[#523970]">Login</h1>
 					<form action="">
 						<div className="flex justify-center items-center gap-5 text-[#523970] mb-[10%]">
-							<label htmlFor="label" className="font-semibold">
+							<label htmlFor="label2" className="font-semibold">
 								Region
 							</label>
-							<select class="border border-blue-500 py-1 px-4 pr-8 rounded  focus:outline-none focus:bg-white focus:border-gray-500 text-black">
+							<select className="border border-blue-500 py-1 px-4 pr-8 rounded  focus:outline-none focus:bg-white focus:border-gray-500 text-black">
 								<option>Bangladesh</option>
 								<option>India</option>
 								<option>Nepal</option>
@@ -34,7 +34,7 @@ function Login() {
 
 						<div className="flex flex-wrap mb-5 md:mb-2">
 							<div className="w-full ">
-								<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+								<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 									Username
 								</label>
 								<input
@@ -46,7 +46,7 @@ function Login() {
 						</div>
 						<div className="flex flex-wrap mb-5 md:mb-2">
 							<div className="w-full">
-								<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" for="grid-first-name">
+								<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 									Password
 								</label>
 								<input
@@ -57,14 +57,14 @@ function Login() {
 							</div>
 						</div>
 						<div className="flex flex-wrap justify-between mb-5 md:mb-2">
-							<div class="form-check flex justify-center items-center">
+							<div className="form-check flex justify-center items-center">
 								<input
-									class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200  bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+									className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200  bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
 									type="checkbox"
 									value=""
 									id="flexCheckDefault"
 								/>
-								<label class="text-sm form-check-label inline-block text-gray-800" for="flexCheckDefault">
+								<label className="text-sm form-check-label inline-block text-gray-800" htmlFor="flexCheckDefault">
 									Remember me
 								</label>
 							</div>

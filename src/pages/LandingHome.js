@@ -32,12 +32,12 @@ function LandingHome() {
 				</div>
 
 				<div className="w-full mt-[60px] pb-[80px]  flex justify-center items-center ">
-					<div className="max-w-xl p-5 text-center text-white ">
-						<div className="w-md text-6xl mb-5 font-semibold">
-							<h1>One Platform</h1>
+					<div className="max-w-lg p-5 text-center text-white ">
+						<div className="w-md text-5xl mb-5 font-semibold">
+							<h1 className="mb-2">One Platform</h1>
 							<h1> All travel Solutions</h1>
 						</div>
-						<div className="max-w-md  mx-auto text-xl  mb-5">
+						<div className="max-w-md  mx-auto text-md  mb-5">
 							<p>We make it easy to plan your travel, automate your expenses and provide valiable insight</p>
 						</div>
 
