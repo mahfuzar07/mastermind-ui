@@ -85,8 +85,8 @@ function Carousel() {
 							<div className="p-2 text-[#523970]">
 								<h1 className=" text-md mb-1 font-bold">{item.title}</h1>
 								<div className="mb-2">
-									<span className="flex items-center gap-2 text-xl">
-										<PublicIcon fontSize=" text-[0.8rem]" />
+									<span className="flex items-center gap-1 text-xl">
+										<PublicIcon fontSize="sm" />
 										<span className=" text-[0.8rem]">{item.country}</span>
 									</span>
 								</div>
