@@ -6,6 +6,7 @@ import ticket from '../images/plane-ticket.png';
 import time from '../images/alarm-clock.png';
 import Carousel from '../components/Carousel';
 import PackageGalary from '../components/PackageGalary';
+import Route from '../components/Route';
 
 function Home() {
 	const [navfix, setNavfix] = useState(false);
@@ -259,6 +260,10 @@ function Home() {
 			<section className="container px-10  mx-auto mt-10">
 				<div className="text-center my-5 text-3xl font-bold text-[#523970]">Popular Packages</div>
 				<PackageGalary />
+			</section>
+			<section className="container px-20  mx-auto mt-10">
+				<div className="text-center my-5 text-3xl font-bold text-[#523970]">Popular Route</div>
+				<Route />
 			</section>
 
 			<section className="">
