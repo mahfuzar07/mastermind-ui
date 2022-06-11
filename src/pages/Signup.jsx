@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-
+import facebook from '../images/social icon/facebook (2).png';
+import google from '../images/social icon/search.png';
+import twitter from '../images/social icon/twitter.png';
 function Signup() {
 	return (
 		<div className="pb-5">
@@ -200,21 +202,23 @@ function Signup() {
 				</form>
 				<div className="text-center">
 					<p className="text-[#685383] ">
-						Already have an account?
-						<button className="text-[#523970] font-bold my-2"> Login now</button>
+						Already have an account ?
+						<button className="text-[#523970] font-bold my-3 ml-2">
+							<a href="/"> Login now</a>
+						</button>
 					</p>
 				</div>
-				<div className="text-center text-sm mt-[3%]">
+				<div className="text-center text-sm mt-2">
 					<p className="text-[#685383] mb-3">You can Sign up with</p>
-					<div className="flex justify-center items-center">
+					<div className="flex gap-10 justify-center items-center">
 						<a href="/">
-							<img className="h-[40px] w-[70px]" src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="" />
+							<img className="h-10 w-10" src={google} alt="" />
 						</a>
 						<a href="/">
-							<img className="h-[40px] w-[70px]" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="" />
+							<img className="h-10 w-10" src={facebook} alt="" />
 						</a>
 						<a href="/">
-							<img className="h-[40px] w-[70px]" src="https://cdn.pixabay.com/photo/2018/06/22/19/03/logo-3491390_1280.png" alt="" />
+							<img className="h-10 w-10" src={twitter} alt="" />
 						</a>
 					</div>
 				</div>

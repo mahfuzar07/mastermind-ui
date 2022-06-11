@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import facebook from '../images/social icon/facebook (2).png';
+import google from '../images/social icon/search.png';
+import twitter from '../images/social icon/twitter.png';
 
 function Login() {
+	const [open, setOpen] = useState(false);
+	const toggle = () => {
+		setOpen(!open);
+	};
 	return (
 		<section className="h-full md:h-screen  bg-loginBg bg-cover">
 			<div className="top-0 h-[10%] w-full fixed bg-[#523970]">
@@ -33,7 +42,7 @@ function Login() {
 						</div>
 
 						<div className="flex flex-wrap mb-5 md:mb-2">
-							<div className="w-full ">
+							<div className="w-full">
 								<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 									Username
 								</label>
@@ -45,15 +54,18 @@ function Login() {
 							</div>
 						</div>
 						<div className="flex flex-wrap mb-5 md:mb-2">
-							<div className="w-full">
+							<div className="w-full  relative">
 								<label className="block  tracking-wide text-[#523970] text-sm font-bold mb-2" htmlFor="grid-first-name">
 									Password
 								</label>
 								<input
 									className="block w-full text-[#523970] border border-[#523970]  rounded-md py-2 px-2 mb-2 leading-tight focus:outline-none focus:bg-white placeholder:text-sm placeholder:text-[#523970]"
-									type="password"
+									type={open === false ? 'password' : 'test'}
 									placeholder="Enter Password"
 								/>
+								<div className="top-9 right-8 absolute text-[#b1afb3]">
+									{open === false ? <VisibilityOffIcon onClick={toggle} /> : <VisibilityIcon onClick={toggle} />}
+								</div>
 							</div>
 						</div>
 						<div className="flex flex-wrap justify-between mb-5 md:mb-2">
@@ -73,34 +85,30 @@ function Login() {
 							</a>
 						</div>
 						<div className="text-center">
-							<button className="mt-2 w-full my-3 py-2 rounded-lg text-white bg-[#523970]">
+							<button className="w-full my-3 py-2 rounded-lg text-white bg-[#523970]">
 								<a href="/"> Login </a>
 							</button>
 						</div>
 					</form>
-					<div className="text-center mb-2">
+					<div className="text-center">
 						<p className="text-[#685383] ">
 							Dont't have an account?
-							<a href="/" className="text-[#523970] font-bold my-2 ml-2">
+							<a href="/" className="text-[#523970] font-bold ml-2">
 								Register Now
 							</a>
 						</p>
 					</div>
-					<div className="text-center text-sm mt-[1%]">
-						<p className="text-[#685383] mb-1">You can Sign up with</p>
-						<div className="flex justify-center items-center">
+					<div className="text-center text-sm">
+						<p className="text-[#685383] mb-3">You can Sign up with</p>
+						<div className="flex gap-10 justify-center items-center">
 							<a href="/">
-								<img className="h-[40px] w-[70px]" src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="" />
+								<img className="h-10 w-10" src={google} alt="" />
 							</a>
 							<a href="/">
-								<img className="h-[40px] w-[70px]" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="" />
+								<img className="h-10 w-10" src={facebook} alt="" />
 							</a>
 							<a href="/">
-								<img
-									className="h-[40px] w-[70px]"
-									src="https://cdn.pixabay.com/photo/2018/06/22/19/03/logo-3491390_1280.png"
-									alt=""
-								/>
+								<img className="h-10 w-10" src={twitter} alt="" />
 							</a>
 						</div>
 					</div>
