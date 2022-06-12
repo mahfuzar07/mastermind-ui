@@ -74,7 +74,7 @@ function Carousel() {
 				{populerPlace.map((item, index) => {
 					return (
 						<div key={index} className="cursor-pointer">
-							<div className="w-[270px] rounded-md overflow-hidden md:ml-1 ml-2">
+							<div className="w-[270px]  rounded-md overflow-hidden md:ml-1 ml-2">
 								<img
 									className="w-[270px] h-[270px] object-cover transition duration-700 ease-in-out hover:scale-105"
 									src={item.img}

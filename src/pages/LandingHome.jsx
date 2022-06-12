@@ -31,7 +31,7 @@ function LandingHome() {
 					<Navbar />
 				</div>
 
-				<div className="w-full mt-[60px] pb-[80px]  flex justify-center items-center ">
+				<div className="w-full pt-[60px] pb-[80px]  flex justify-center items-center ">
 					<div className="max-w-lg p-5 text-center text-white ">
 						<div className="w-md text-5xl mb-5 font-semibold">
 							<h1 className="mb-2">One Platform</h1>

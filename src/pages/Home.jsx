@@ -7,6 +7,7 @@ import time from '../images/alarm-clock.png';
 import Carousel from '../components/Carousel';
 import PackageGalary from '../components/PackageGalary';
 import Route from '../components/Route';
+import FooterSlider from '../components/FooterSlider';
 
 function Home() {
 	const [navfix, setNavfix] = useState(false);
@@ -36,7 +37,7 @@ function Home() {
 				<div className={`z-10 ${navfix ? 'top-0 h-[10%] w-full fixed bg-[#523970]' : ''}`}>
 					<Navbar />
 				</div>
-				<div className="w-full mt-[8%] flex justify-center items-center ">
+				<div className="w-full pt-[8%] flex justify-center items-center ">
 					<div className="max-w-xl p-5 text-center text-white ">
 						<div className="w-md text-5xl mb-5 font-semibold">
 							<h1>Travel, Fun, Enjoy</h1>
@@ -264,6 +265,9 @@ function Home() {
 			<section className="container px-20  mx-auto mt-10">
 				<div className="text-center my-5 text-3xl font-bold text-[#523970]">Popular Route</div>
 				<Route />
+			</section>
+			<section className="container px-10  mx-auto mb-[-15%] mt-10">
+				<FooterSlider />
 			</section>
 
 			<section className="">
